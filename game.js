@@ -1,8 +1,9 @@
 
 cards.init({
     table:'#card-table',
+    cardUrl: 'img/cards.png',
     cardSize: {
-        weight: 69,
+        width: 69,
         height: 94,
         padding: 100,
     },
@@ -18,5 +19,6 @@ upperhand = new cards.Hand({faceUp:false, y:60});
 lowerhand = new cards.Hand({faceUp:true,  y:340});
 
 $('#deal').click(() => {
+    $('#deal').hide();
     deck.deal(3, [upperhand, lowerhand]);
 })
