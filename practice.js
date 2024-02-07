@@ -18,6 +18,6 @@ deck.render({immediate:true});
 upperhand = new cards.Hand({faceUp:false, y:60});
 lowerhand = new cards.Hand({faceUp:true,  y:340});
 
-$('#deal').click(function() {
-    deck.deal(3,);
+$('#deal').click(() => {
+    deck.deal(3, [upperhand, lowerhand]);
 })
