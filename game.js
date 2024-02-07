@@ -1,13 +1,12 @@
 
 cards.init({
     table:'#card-table',
-    cardUrl: 'img/cards.png',
     cardSize: {
         weight: 69,
         height: 94,
         padding: 100,
     },
-    type:STANDARD
+    type:STANDARD,
 });
 
 deck = new cards.Deck();
